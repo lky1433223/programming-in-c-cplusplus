@@ -3,6 +3,5 @@
 using namespace std;
 int main()
 {
-	cout << "test" << endl;
-	cct_cls();
+	
 }
