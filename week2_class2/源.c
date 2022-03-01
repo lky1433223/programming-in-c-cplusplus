@@ -3,7 +3,8 @@ char c;
 int main()
 {
 	puts("input a charactor");
-	scanf_s("%c", &c);
+	if(scanf("%c", &c) != EOF)
+		return 1;
 	c += 38;
 	printf("%c", c);
 }
