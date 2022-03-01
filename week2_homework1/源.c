@@ -11,7 +11,7 @@ void swap(char* a, char* b)
 	*a = *b;
 	*b = tmp;
 }
-//≈≈–Ú
+//≤Â»Î≈≈–Ú
 void sort(char a[])
 {
 	for (int i = 2; i <= 3; ++i)
@@ -20,6 +20,8 @@ void sort(char a[])
 		{
 			if (a[j] < a[j + 1])
 				swap(&a[j], &a[j + 1]);
+			else
+				break;
 		}
 	}
 }
