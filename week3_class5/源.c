@@ -9,3 +9,4 @@ int main()
 		putchar('0' + ((x >> i) & 1));
 	}
 }
+//
