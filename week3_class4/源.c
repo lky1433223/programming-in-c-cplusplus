@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-int DAY[] = { 0, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+int DAY[] = { 0, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 inline int judge(int x)
 {
 	return x % 100 == 0 ? x % 400 == 0 : x % 4 == 0;
@@ -19,12 +19,13 @@ int main()
 	for (int i = 1; i < m; ++i)
 	{
 		if (i == 2)
-			day += ye ? 28 : 29;
+			day += ye ? 29 : 28;
 		else
 			day += DAY[i];
 	}
 	day += d;
-	day %= 5;
 	printf("%d", day);
+	--day;
+	day %= 5;
 	puts(day < 3 ? "´òÓã" : "É¹Íø");
 }
